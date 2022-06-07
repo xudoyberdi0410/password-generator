@@ -8,10 +8,10 @@ function generate(minL, maxL, uLetters, lLetters, nums, sym) {
 
     let password_symbols = []
     if (uLetters) password_symbols.push(bigLetters)
-    else if (lLetters) password_symbols.push(smallLetters)
-    else if (nums) password_symbols.push(numbers)
-    else if (sym) password_symbols.push(symbols)
-    else password_symbols.push(numbers)
+    if (lLetters) password_symbols.push(smallLetters)
+    if (nums) password_symbols.push(numbers)
+    if (sym) password_symbols.push(symbols)
+    if(!uLetters || !lLetters || !nums || !sym) password_symbols.push(numbers)
 
     let password = ''
 

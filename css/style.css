@@ -34,6 +34,9 @@ body{
     align-items: center;
     margin: 16px 0;
 }
+#password{
+    overflow: auto;
+}
 button{
     display: flex;
     align-items: center;
