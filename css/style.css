@@ -1,0 +1,73 @@
+/* #23235B*/
+/* #3B3B98*/
+/* #6633CC*/
+/* #151537*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #fff;
+    background-color: #6633CC;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #23235B;
+    border-radius: 20px;
+    width: 300px;
+    margin: 0 auto;
+    align-self: center;
+    padding: 20px 10px;
+}
+.password{
+    background-color: #151537;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 0;
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #3B3B98;
+    border: none;
+    color: #ffffff;
+    box-shadow: 0 0 2px #6633CC;
+}
+button:hover{
+    background-color: #6633CC;
+}
+button:active{
+    box-shadow: none;
+}
+svg{
+    fill: #fff;
+}
+#copied{
+    display: none;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form label{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    align-items: center;
+}
+form label input[type="number"]{
+    width: 70px;
+}
